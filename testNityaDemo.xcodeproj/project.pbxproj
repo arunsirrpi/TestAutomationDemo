@@ -16,6 +16,7 @@
 		BF45049F28C1C1B700301D60 /* testNityaDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF45049E28C1C1B700301D60 /* testNityaDemoTests.swift */; };
 		BF4504A928C1C1B700301D60 /* testNityaDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4504A828C1C1B700301D60 /* testNityaDemoUITests.swift */; };
 		BF4504AB28C1C1B700301D60 /* testNityaDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4504AA28C1C1B700301D60 /* testNityaDemoUITestsLaunchTests.swift */; };
+		BF82777728C1C4A40075EA02 /* AutomationInteractable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF82777628C1C4A40075EA02 /* AutomationInteractable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		BF4504A428C1C1B700301D60 /* testNityaDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testNityaDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF4504A828C1C1B700301D60 /* testNityaDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testNityaDemoUITests.swift; sourceTree = "<group>"; };
 		BF4504AA28C1C1B700301D60 /* testNityaDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testNityaDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BF82777628C1C4A40075EA02 /* AutomationInteractable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomationInteractable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 			children = (
 				BF4504A828C1C1B700301D60 /* testNityaDemoUITests.swift */,
 				BF4504AA28C1C1B700301D60 /* testNityaDemoUITestsLaunchTests.swift */,
+				BF82777628C1C4A40075EA02 /* AutomationInteractable.swift */,
 			);
 			path = testNityaDemoUITests;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF82777728C1C4A40075EA02 /* AutomationInteractable.swift in Sources */,
 				BF4504A928C1C1B700301D60 /* testNityaDemoUITests.swift in Sources */,
 				BF4504AB28C1C1B700301D60 /* testNityaDemoUITestsLaunchTests.swift in Sources */,
 			);

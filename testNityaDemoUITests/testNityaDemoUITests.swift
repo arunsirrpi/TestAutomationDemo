@@ -7,7 +7,7 @@
 
 import XCTest
 
-class testNityaDemoUITests: XCTestCase {
+class testNityaDemoUITests: XCTestCase, AutomationInteractable {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -22,20 +22,21 @@ class testNityaDemoUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    func testHelloLabelExisit() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
-
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        waitForElement(
+            withId: "HelloWorld",
+            withTimeout: 30,
+            in: elementExisitCallback(exists:)
+        )
+    }
+    
+    func elementExisitCallback(exists: Bool) {
+        XCTAssert(exists == true, "Element did not exisits")
     }
 
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
-    }
+  
 }
